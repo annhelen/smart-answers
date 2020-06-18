@@ -44,9 +44,10 @@
   </div>
 <% end %>
 
+<span class="govuk-caption-xl"><%= @presenter.title %></span>
 <%= render "govuk_publishing_components/components/fieldset", {
   legend_text: question.title,
-  heading_size: 'm',
+  heading_size: 'xl',
   error_message: question.error,
   error_id: question.error_id,
   text: form_contents

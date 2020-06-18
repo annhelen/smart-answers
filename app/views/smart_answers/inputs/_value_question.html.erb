@@ -1,10 +1,11 @@
+<span class="govuk-caption-xl"><%= @presenter.title %></span>
 <%= render "govuk_publishing_components/components/input", {
   label: {
     text: question.title
   },
   name: "response",
   id: "response",
-  heading_size: "m",
+  heading_size: "xl",
   width: 10,
   hint: question.hint_text,
   value: prefill_value_for(question),
