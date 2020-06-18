@@ -1,6 +1,8 @@
 <%= render "govuk_publishing_components/components/radio", {
   name: "response",
+  heading_caption: @presenter.title,
   heading: question.title,
+  is_page_heading: true,
   hint: question.hint,
   id_prefix: "response",
   description: question.body,
