@@ -63,6 +63,24 @@ module SmartAnswer
         end
       end
 
+      # Q5a
+      value_question :allowable_deductions? do
+        save_input_as :allowable_deductions
+
+        next_node do |response|
+          question :other_allowable_deductions?
+        end
+      end
+
+      # Q5b
+      value_question :other_allowable_deductions? do
+        save_input_as :other_allowable_deductions
+
+        next_node do |response|
+          outcome :outcome_1
+        end
+      end
+
       outcome :outcome_1
     end
   end
